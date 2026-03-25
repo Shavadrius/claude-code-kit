@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(**/*.md)",
+      "Write(**/*.md)",
+      "Bash(git status)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(wc *)"
+    ]
+  }
+}
