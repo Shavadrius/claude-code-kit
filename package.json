@@ -1,0 +1,14 @@
+{
+  "name": "claude-code-kit",
+  "version": "0.1.0",
+  "description": "Reusable agents, skills, commands, and rules for Claude Code",
+  "private": true,
+  "files": [
+    "agents/",
+    "skills/",
+    "commands/",
+    "rules/",
+    "hooks/",
+    ".claude-plugin/"
+  ]
+}

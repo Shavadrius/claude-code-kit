@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-code-kit",
+  "description": "Reusable agents, skills, commands, and rules for Claude Code — applicable to any project",
+  "owner": { "name": "private" },
+  "plugins": [
+    {
+      "name": "claude-code-kit",
+      "source": "./",
+      "version": "0.1.0",
+      "category": "workflow",
+      "strict": false
+    }
+  ]
+}
