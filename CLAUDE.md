@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **claude-code-kit** — an installable Claude Code plugin providing reusable agents, skills, commands, and rules applicable to any project and tech stack.
 
-Install via: `claude plugins install github:<user>/claude-code-kit`
+Install via: `claude plugins install github:Shavadrius/claude-code-kit`
 
 ## Repository structure
 

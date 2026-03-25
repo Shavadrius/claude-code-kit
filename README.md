@@ -5,7 +5,7 @@ Reusable agents, skills, commands, and rules for Claude Code — applicable to a
 ## Installation
 
 ```bash
-claude plugins install github:<your-username>/claude-code-kit
+claude plugins install github:Shavadrius/claude-code-kit
 ```
 
 Or for local development:
