@@ -8,7 +8,7 @@ This is a **private plugin** — requires registering the repo as a custom marke
 
 **Step 1 — Register the marketplace** (once per machine):
 ```bash
-claude plugins marketplace add github:Shavadrius/claude-code-kit
+claude plugins marketplace add Shavadrius/claude-code-kit
 ```
 
 **Step 2 — Install the plugin:**
