@@ -12,5 +12,8 @@
       "WebSearch",
       "WebFetch(*)"
     ]
+  },
+  "enabledPlugins": {
+    "claude-code-kit@claude-code-kit": true
   }
 }

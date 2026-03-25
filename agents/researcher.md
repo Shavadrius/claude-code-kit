@@ -1,6 +1,6 @@
 ---
 name: researcher
-description: Use when asked to research, investigate, or find information about any topic. Triggers on "поисследуй", "research", "найди информацию", "изучи тему", "what is", "how does". Runs independently and saves findings to a file.
+description: ALWAYS delegate to this agent (never handle inline) when the user wants to research, investigate, or find information. Trigger words: "поисследуй", "исследуй", "research", "найди информацию", "изучи", "what is", "how does", "расскажи о", "узнай про". Saves findings silently to a file, never outputs to chat.
 tools: WebSearch, WebFetch, Read, Write
 model: claude-sonnet-4-6
 ---

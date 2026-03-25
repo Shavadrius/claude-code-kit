@@ -9,3 +9,5 @@
 4. When uncertain between two implementation approaches, read existing code first and follow the pattern already in use — consistency beats optimization.
 
 5. Parallel agent execution requires the phrase "IN PARALLEL (single message, multiple Agent tool calls)" — without this phrase, agents run sequentially.
+
+6. Research requests must always be delegated to the researcher agent — never handled inline. When the user asks to research, investigate, or find information (keywords: "поисследуй", "исследуй", "research", "найди информацию", "изучи", "расскажи о", "узнай про", "what is", "how does"), spawn the researcher agent. Do NOT use WebSearch or WebFetch directly in the main context for research tasks.
