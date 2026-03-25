@@ -8,7 +8,9 @@
       "Bash(git diff*)",
       "Bash(git add*)",
       "Bash(git commit*)",
-      "Bash(wc *)"
+      "Bash(wc *)",
+      "WebSearch",
+      "WebFetch(*)"
     ]
   }
 }

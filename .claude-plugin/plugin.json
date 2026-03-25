@@ -4,5 +4,11 @@
   "description": "Reusable agents, skills, commands, and rules for Claude Code — applicable to any project",
   "author": { "name": "private" },
   "license": "UNLICENSED",
-  "keywords": ["claude-code", "agents", "skills", "orchestration"]
+  "keywords": ["claude-code", "agents", "skills", "orchestration"],
+  "config": {
+    "researchPath": {
+      "description": "Directory where researcher agent saves output files. Override in project CLAUDE.md with: Research output path: <path>",
+      "default": "research/"
+    }
+  }
 }

@@ -27,6 +27,7 @@ claude plugins install /path/to/claude-code-kit
 | `implementer` | When a plan exists and implementation starts | sonnet |
 | `debugger` | When a bug exists and root cause is unclear | sonnet |
 | `verifier` | After implementation — runs tests and build | sonnet |
+| `researcher` | When asked to research or investigate any topic | sonnet |
 
 ### Commands
 
@@ -44,6 +45,20 @@ claude plugins install /path/to/claude-code-kit
 - Reviewer agents never modify files
 - Follow existing patterns over optimization
 - Parallel agents require explicit phrase
+
+## Configuration
+
+### Research output path
+
+By default, the `researcher` agent saves files to `research/` in your current project.
+
+To override per-project, add this line to your project's `CLAUDE.md`:
+
+```
+Research output path: docs/research/
+```
+
+The agent reads `CLAUDE.md` on each invocation and uses the configured path.
 
 ## How overrides work
 

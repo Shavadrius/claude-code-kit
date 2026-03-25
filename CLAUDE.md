@@ -12,7 +12,8 @@ Install via: `claude plugins install github:<user>/claude-code-kit`
 
 ### Executable primitives (installed as plugin)
 
-- `agents/` — 7 reusable agents: planner, code-reviewer, security-reviewer, architect, implementer, debugger, verifier
+- `agents/` — 8 reusable agents: planner, code-reviewer, security-reviewer, architect, implementer, debugger, verifier, researcher
+  - `agents/researcher.md` — web research agent: WebSearch + WebFetch, infers depth from query, saves to `research/`
 - `commands/` — 3 pipeline commands: pipeline, pipeline-review, pipeline-bugfix
 - `rules/universal.md` — always-on rules loaded in every session
 - `skills/` — empty, Phase 6 (tdd-workflow, git-commit, explore-codebase, api-design, estimate-complexity)
@@ -40,6 +41,16 @@ Install via: `claude plugins install github:<user>/claude-code-kit`
 - **Parallel execution**: Requires phrase "IN PARALLEL (single message, multiple Agent tool calls)"
 - **Plugin loading order**: Plugin → user-level `~/.claude/` → project-level `.claude/` (last wins)
 - **Override pattern**: Create `.claude/agents/<name>.md` in a project to replace the plugin version
+
+## Researcher agent configuration
+
+To set a custom output path for a specific project, add to that project's `CLAUDE.md`:
+
+```
+Research output path: docs/research/
+```
+
+Default: `research/` in the project root.
 
 ## When editing this plugin
 
