@@ -11,9 +11,14 @@ This is a **private plugin** — requires registering the repo as a custom marke
 claude plugins marketplace add Shavadrius/claude-code-kit
 ```
 
-**Step 2 — Install the plugin:**
+**Step 2 — Install the plugin** (project scope — adds to `.claude/settings.json`):
 ```bash
-claude plugins install claude-code-kit@claude-code-kit
+claude plugins install claude-code-kit@claude-code-kit --scope project
+```
+
+Or globally for all your projects:
+```bash
+claude plugins install claude-code-kit@claude-code-kit --scope user
 ```
 
 **Requires:** GitHub access to the private repo (SSH key or token configured on your machine).
