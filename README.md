@@ -4,12 +4,26 @@ Reusable agents, skills, commands, and rules for Claude Code — applicable to a
 
 ## Installation
 
+This is a **private plugin** — `claude plugins install github:...` works only for plugins in the official Anthropic marketplace. Use manual installation instead:
+
 ```bash
-claude plugins install github:Shavadrius/claude-code-kit
+# Clone to the Claude plugins directory
+git clone git@github.com:Shavadrius/claude-code-kit.git \
+  ~/.claude/plugins/marketplaces/claude-code-kit
+
+# Enable the plugin
+claude plugins enable claude-code-kit
 ```
 
-Or for local development:
+If using SSH with a custom config alias (e.g. `github-claude-code-kit`):
+```bash
+git clone git@github-claude-code-kit:Shavadrius/claude-code-kit.git \
+  ~/.claude/plugins/marketplaces/claude-code-kit
 
+claude plugins enable claude-code-kit
+```
+
+For local development (from a local path):
 ```bash
 claude plugins install /path/to/claude-code-kit
 ```
